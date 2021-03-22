@@ -1,0 +1,55 @@
+{
+
+  "Species" : {
+    "species":"mm10",
+    "spikeIn":"sacCer3",
+    "BTindex_human":"PATH_to_HS_INDEX",
+    "BTindex_yeast":"PATH_to_YEAST_INDEX",
+    "BTindex_mouse":"",
+    "BTindex_mouse_mm9":""
+    },
+
+
+"ToolPATH" :{
+    "CONDA_PATH":"",
+    "SAMPLE_DATA":"",
+    "TRIMGALORE_PATH":"/tools/TrimGalore-0.6.5",
+    "TRIMMOMATIC_JAR" : "/tools/trimmomatic/trimmomatic.jar",
+    "TRIM_ADAPTER_PATH" : "/tools/trimmomatic/adapters",
+    "FASTQC_PATH":"/tools/FastQC/fastqc",
+    "BOWTIE2_PATH":"/tools/bowtie2/bowtie2",
+    "SAMTOOLS_PATH":"/tools/samtools-1.9/samtools",
+    "PICARD_PATH":"/tools/picard/picard.jar",
+    "MACS2_PATH":"/usr/bin/",
+    "ROSE_PATH":"/tools/rose/",
+    "HOMER_PATH":"/tools/homer/bin/",
+    "DEEPTOOLS_PATH":"",
+    "SEACR_PATH":"/tools/SEACR/SEACR/SEACR_1.2.sh",
+    "BEDTOOLS_PATH":"/tools/bedtools2/bin/"
+    },
+
+"AdapterTrimTrimmomatic" : {
+    "adapter": "TruSeq3-PE.fa:2:30:10",
+    "leading": 3,
+    "trailing": 3,
+    "minlen": 25,
+    "window": "4:15",
+    "t_alignment":10
+  },
+
+"AlignmentParams" : {
+    "bowtie_threads":30,
+    "spikein-sacCer3":"--local -D 20 -R 3 -N 0 -L 20 -i S,1,0.50 --no-unal --no-mixed --no-discordant --phred33 --no-overlap --no-dovetail -I 10 -X 700",
+    "speciesParam":"--local -D 20 -R 3 -N 0 -L 20 -i S,1,0.50 --no-unal --no-mixed --no-discordant --phred33 -I 10 -X 700"
+  },
+
+"Macs2Settings" : {
+    "pval" : "1e-3"
+  },
+
+"SeacrSettings" : {
+    "IgG_Control": "yes"
+  },
+
+
+}

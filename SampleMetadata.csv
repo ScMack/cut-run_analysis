@@ -1,0 +1,6 @@
+SampleID,SampleID_New,FastqFilePath,Merge,Factor,Replicate,Tissue,Treatment
+Sample1,Sample1,/PATH_to_FASTQS,FALSE,H3K27ac,1,M00001,Tumor
+Sample2,Sample2,/PATH_to_FASTQS,FALSE,H3K27ac,1,M00001,Tumor
+Sample3,Sample3,/PATH_to_FASTQS,FALSE,H3K27ac,1,M00001,Tumor
+Sample4,Sample4,/PATH_to_FASTQS,FALSE,Brd4,1,M00001,Tumor
+Sample5,Sample5,/PATH_to_FASTQS,FALSE,Brd4,1,M00001,Tumor
